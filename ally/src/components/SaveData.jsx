@@ -3,16 +3,17 @@ import MyContext from '../context/myContext';
 
 function SaveData() {
   const { save } = useContext(MyContext);
-  console.log(save);
-
-  // useEffect(() => {
-  //   console.log(save);
-  // }, [save]);
   return (
-    <div>
-      SaveData
-
-    </div>
+    <section>
+      <ul>
+        <li>{save.inputName}</li>
+        <li>{save.inputEmail}</li>
+        <li>{save.inputPhone}</li>
+        <li>{save.inputCpf}</li>
+        <li>{save.inputCountry}</li>
+        <li>{save.inputCity}</li>
+      </ul>
+    </section>
   );
 }
 

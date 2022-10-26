@@ -7,38 +7,44 @@ function Provider({ children }) {
   const [inputEmail, setInputEmail] = useState('');
   const [inputPhone, setInputPhone] = useState('');
   const [inputCpf, setInputCpf] = useState('');
+  const [inputCountry, setInputCountry] = useState('');
+  const [inputCity, setInputCity] = useState('');
   const [save, setSave] = useState('');
 
-  const handleValueName = ({ target: { value } }) => {
-    setInputName(value);
-  };
-  const handleValueEmail = ({ target: { value } }) => {
-    setInputEmail(value);
-  };
-  const handleValuePhone = ({ target: { value } }) => {
-    setInputPhone(value);
-  };
-  const handleValueCpf = ({ target: { value } }) => {
-    setInputCpf(value);
-  };
+  const handleValueName = ({ target: { value } }) => setInputName(value);
+  const handleValueEmail = ({ target: { value } }) => setInputEmail(value);
+  const handleValuePhone = ({ target: { value } }) => setInputPhone(value);
+  const handleValueCpf = ({ target: { value } }) => setInputCpf(value);
+  const handleValueCountry = ({ target: { value } }) => setInputCountry(value);
+  const handleValueCity = ({ target: { value } }) => setInputCity(value);
 
   const handleClick = useCallback(() => {
-    const values = { inputName, inputEmail, inputPhone, inputCpf };
+    const values = { inputName,
+      inputEmail,
+      inputPhone,
+      inputCpf,
+      inputCountry,
+      inputCity };
     setSave(values);
-  }, [inputCpf, inputEmail, inputName, inputPhone]);
+  }, [inputCity, inputCountry, inputCpf, inputEmail, inputName, inputPhone]);
 
   const contextValue = useMemo(() => ({
     inputName,
     inputEmail,
     inputPhone,
     inputCpf,
+    inputCountry,
+    inputCity,
     handleValueName,
     handleValueEmail,
     handleValuePhone,
     handleValueCpf,
+    handleValueCountry,
+    handleValueCity,
     save,
     handleClick,
-  }), [inputName, inputEmail, inputPhone, inputCpf, save, handleClick]);
+  }), [inputName,
+    inputEmail, inputPhone, inputCpf, inputCountry, inputCity, save, handleClick]);
 
   return (
     <MyContext.Provider value={ contextValue }>
