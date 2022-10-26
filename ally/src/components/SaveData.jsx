@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import MyContext from '../context/myContext';
 
 function SaveData() {
@@ -13,6 +14,9 @@ function SaveData() {
         <li>{save.inputCountry}</li>
         <li>{save.inputCity}</li>
       </ul>
+      <Link to="/">
+        <button type="button">Voltar</button>
+      </Link>
     </section>
   );
 }

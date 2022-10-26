@@ -22,7 +22,6 @@ function InterestDestinations() {
       <h1>Destinos de Interesse</h1>
 
       <div>
-
         <select
           name="city"
           value={ inputCountry }

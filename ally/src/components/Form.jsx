@@ -65,7 +65,6 @@ function PersonalData() {
         </label>
         <InterestDestinations />
       </form>
-
     </section>
   );
 }
