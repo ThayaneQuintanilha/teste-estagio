@@ -7,6 +7,7 @@ function Destinations() {
     <main>
       <PersonalData />
       <InterestDestinations />
+      <button type="button">Enviar</button>
     </main>
   );
 }
