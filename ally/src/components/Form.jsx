@@ -36,7 +36,7 @@ function PersonalData() {
           <input
             type="text"
             name="e-mail"
-            value={ inputEmail.name }
+            value={ inputEmail }
             onChange={ handleValueEmail }
             required
           />
@@ -47,7 +47,7 @@ function PersonalData() {
           <input
             type="text"
             name="telefone"
-            value={ inputPhone.name }
+            value={ inputPhone }
             onChange={ handleValuePhone }
             required
           />
@@ -58,7 +58,7 @@ function PersonalData() {
           <input
             type="text"
             name="cpf"
-            value={ inputCpf.name }
+            value={ inputCpf }
             onChange={ handleValueCpf }
             required
           />

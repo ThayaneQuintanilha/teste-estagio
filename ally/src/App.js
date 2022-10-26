@@ -9,7 +9,7 @@ function App() {
     <Provider>
       <BrowserRouter>
         <Route exact path="/" component={ Destinations } />
-        <Route path="/saveForm" component={ SaveForm } />
+        <Route path="/saveform" component={ SaveForm } />
       </BrowserRouter>
     </Provider>
   );

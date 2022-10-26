@@ -1,8 +1,11 @@
 import React from 'react';
+import SaveData from '../components/SaveData';
 
 function SaveForm() {
   return (
-    <div>SaveForm</div>
+    <div>
+      <SaveData />
+    </div>
   );
 }
 

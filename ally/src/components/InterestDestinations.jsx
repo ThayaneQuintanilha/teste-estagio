@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 // import Multiselect from 'multiselect-react-dropdown';
+import { Link } from 'react-router-dom';
 import { fetchCountry, fetchCity } from '../services/fetchApi';
 import MyContext from '../context/myContext';
 
@@ -46,7 +47,9 @@ function InterestDestinations() {
             return <option key={ id }>{name}</option>;
           })}
         </select>
-        <button type="button" onChange={ handleClick }>Enviar</button>
+        <Link to="/saveform" refresh="true">
+          <button type="button" onClick={ handleClick }>Enviar</button>
+        </Link>
       </div>
     </section>
   );

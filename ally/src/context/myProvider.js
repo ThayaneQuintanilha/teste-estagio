@@ -1,6 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
 import MyContext from './myContext';
 
 function Provider({ children }) {
@@ -8,10 +7,7 @@ function Provider({ children }) {
   const [inputEmail, setInputEmail] = useState('');
   const [inputPhone, setInputPhone] = useState('');
   const [inputCpf, setInputCpf] = useState('');
-  const [save, setSave] = useState([]);
-
-  const history = useHistory();
-  console.log(history);
+  const [save, setSave] = useState('');
 
   const handleValueName = ({ target: { value } }) => {
     setInputName(value);
