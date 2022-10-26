@@ -5,7 +5,7 @@ import Destinations from './pages/Destinations';
 function App() {
   return (
     <BrowserRouter>
-      <Route path="/" component={ Destinations } ></Route>
+      <Route exact path="/" component={ Destinations } />
     </BrowserRouter>
   );
 }

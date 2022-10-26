@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { fetchCountry, fetchCity } from "../services/fetchApi";
+import React, { useState, useEffect } from 'react';
+import { fetchCountry, fetchCity } from '../services/fetchApi';
 
 function InterestDestinations() {
   const [countryApi, setCountryApi] = useState([]);
@@ -17,21 +17,22 @@ function InterestDestinations() {
     <section>
       <h1>Destinos de Interesse</h1>
 
-      <form action="forum">
+      <div>
         <select name="city">
           {countryApi.map((country) => {
             const { name, code } = country;
-            return <option key={name}>{ code }</option>;
+            return <option key={ name }>{ code }</option>;
           })}
         </select>
 
         <select name="" id="">
           {cityApi.map((city) => {
-            const { name_ptbr, id } = city;
-            return <option key={id}>{ name_ptbr }</option>
+            const { name_ptbr: name, id } = city;
+            return <option key={ id }>{ name }</option>;
           })}
         </select>
-      </form>
+        <button type="submit">Enviar</button>
+      </div>
     </section>
   );
 }
