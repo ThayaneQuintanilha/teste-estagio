@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import InterestDestinations from './InterestDestinations';
 import MyContext from '../context/myContext';
+import '../styles/form.css';
 
 function PersonalData() {
   const {
@@ -15,12 +16,12 @@ function PersonalData() {
   } = useContext(MyContext);
 
   return (
-    <section>
+    <section className="section-form">
       <h1>Dados Pessoais</h1>
 
       <form action="formulario">
         <label htmlFor="nome">
-          Nome
+          Nome:
           <input
             type="text"
             name="nome"
@@ -32,7 +33,7 @@ function PersonalData() {
         </label>
 
         <label htmlFor="email">
-          E-mail
+          E-mail:
           <input
             type="text"
             name="e-mail"
@@ -43,7 +44,7 @@ function PersonalData() {
         </label>
 
         <label htmlFor="telefone">
-          Telefone
+          Telefone:
           <input
             type="text"
             name="telefone"
@@ -54,7 +55,7 @@ function PersonalData() {
         </label>
 
         <label htmlFor="cpf">
-          CPF
+          CPF:
           <input
             type="text"
             name="cpf"

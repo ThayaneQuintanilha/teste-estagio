@@ -2,15 +2,17 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import MyContext from '../context/myContext';
+import '../styles/interest.css';
 
 function InterestDestinations() {
   const { handleClick, handleValueCountry, handleValueCity, selectCountry,
     selectCity } = useContext(MyContext);
 
   return (
-    <section>
+    <section className="section-interest">
       <h1>Destinos de Interesse</h1>
       <Select
+        className="interest-section"
         isMulti
         options={ selectCountry }
         isClearable
@@ -22,6 +24,7 @@ function InterestDestinations() {
       />
 
       <Select
+        className="interest-section"
         isMulti
         options={ selectCity }
         isClearable

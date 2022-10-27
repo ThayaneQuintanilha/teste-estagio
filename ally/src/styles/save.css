@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-save {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-save ul {
+  background-color: rgb(245, 241, 232);
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(38, 35, 36);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.section-save ul li {
+  padding: 2%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section-save button {
+  padding: 10px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(38, 35, 36);
+  color: rgb(255, 255, 255);
+  transition: ease 0.4s;
+  cursor: pointer;
+}
+
+.section-save button:hover {
+  background-color: rgb(80, 70, 73);
+}

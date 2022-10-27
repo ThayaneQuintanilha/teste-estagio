@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Destinations from './pages/Destinations';
 import Provider from './context/myProvider';

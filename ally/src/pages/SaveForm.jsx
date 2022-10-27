@@ -3,9 +3,9 @@ import SaveData from '../components/SaveData';
 
 function SaveForm() {
   return (
-    <div>
+    <section>
       <SaveData />
-    </div>
+    </section>
   );
 }
 

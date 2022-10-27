@@ -1,0 +1,28 @@
+.section-interest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.section-interest button {
+  padding: 10px;
+  width: 80px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgb(244, 201, 163);
+  border-radius: 20px;
+  color: rgb(109, 109, 109);
+  cursor: pointer;
+  transition: ease 0.4s;
+}
+
+.interest-section {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.section-interest button:hover {
+  background-color: rgb(250, 218, 191);
+}

@@ -3,7 +3,7 @@ import Form from '../components/Form';
 
 function Destinations() {
   return (
-    <main>
+    <main className="destination">
       <Form />
     </main>
   );

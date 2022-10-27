@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import MyContext from '../context/myContext';
+import '../styles/save.css';
 
 function SaveData() {
   const { save, country, city } = useContext(MyContext);
   return (
-    <section>
+    <section className="section-save">
       <ul>
         <li>{save.inputName}</li>
         <li>{save.inputEmail}</li>
