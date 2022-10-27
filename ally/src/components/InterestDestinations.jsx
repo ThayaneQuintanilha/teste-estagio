@@ -11,6 +11,7 @@ function InterestDestinations() {
   return (
     <section className="section-interest">
       <h1>Destinos de Interesse</h1>
+
       <Select
         className="interest-section"
         isMulti
@@ -20,6 +21,7 @@ function InterestDestinations() {
         isDisabled={ false }
         isLoading={ false }
         isRtl={ false }
+        data-testid="country-input"
         onChange={ (country) => handleValueCountry(country) }
       />
 
@@ -32,12 +34,18 @@ function InterestDestinations() {
         isDisabled={ false }
         isLoading={ false }
         isRtl={ false }
+        data-testid="city-input"
         onChange={ (city) => handleValueCity(city) }
       />
-
       <div>
         <Link to="/saveform" refresh="true">
-          <button type="button" onClick={ handleClick }>Enviar</button>
+          <button
+            data-testid="send-btn"
+            type="button"
+            onClick={ handleClick }
+          >
+            Enviar
+          </button>
         </Link>
       </div>
     </section>

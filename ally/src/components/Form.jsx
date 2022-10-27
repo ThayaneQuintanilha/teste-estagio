@@ -28,6 +28,7 @@ function PersonalData() {
             placeholder="Nome Completo"
             value={ inputName }
             onChange={ handleValueName }
+            data-testid="name-input"
             required
           />
         </label>
@@ -39,6 +40,7 @@ function PersonalData() {
             name="e-mail"
             value={ inputEmail }
             onChange={ handleValueEmail }
+            data-testid="email-input"
             required
           />
         </label>
@@ -50,6 +52,7 @@ function PersonalData() {
             name="telefone"
             value={ inputPhone }
             onChange={ handleValuePhone }
+            data-testid="phone-input"
             required
           />
         </label>
@@ -61,6 +64,7 @@ function PersonalData() {
             name="cpf"
             value={ inputCpf }
             onChange={ handleValueCpf }
+            data-testid="cpf-input"
             required
           />
         </label>
