@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import MyContext from '../context/myContext';
 
 function SaveData() {
-  const { save } = useContext(MyContext);
+  const { save, country, city } = useContext(MyContext);
   return (
     <section>
       <ul>
@@ -11,8 +11,12 @@ function SaveData() {
         <li>{save.inputEmail}</li>
         <li>{save.inputPhone}</li>
         <li>{save.inputCpf}</li>
-        <li>{save.inputCountry}</li>
-        <li>{save.inputCity}</li>
+        <li>
+          {country.map((e, index) => <span key={ index }>{`${e.value}, `}</span>)}
+        </li>
+        <li>
+          {city.map((e, index) => <span key={ index }>{`${e.value}, `}</span>)}
+        </li>
       </ul>
       <Link to="/">
         <button type="button">Voltar</button>
